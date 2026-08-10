@@ -195,7 +195,9 @@ footer .foot-main{background:var(--navy);padding:56px 0}
   .head-cta{display:none}
   .burger{display:block}
   .brand-name{display:none}
+  .brand img{height:52px}
 }
+@media(max-width:480px){.brand img{height:44px}}
 @media(max-width:900px){
   .hero{min-height:560px;margin:10px 16px 0}
   .hero .container{padding-top:84px}
@@ -317,7 +319,8 @@ footer .foot-main{background:var(--navy);padding:56px 0}
 .map-legend span{display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;font-weight:600;letter-spacing:0.06em;color:var(--navy)}
 .lg-dot{width:14px;height:14px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,0.2)}
 @media(max-width:900px){.map-wrap{margin:0 16px}#projectMap{height:420px}}
-.svc-form iframe[src*='widget/form']{height:820px !important;min-height:820px}
+@media(min-width:901px){.svc-form iframe[src*='widget/form']{height:820px !important;min-height:820px}}
+@media(max-width:900px){.svc-form iframe[src*='widget/form']{height:600px !important;min-height:600px}}
 
 .svc-form-head{text-align:center;margin:36px auto 24px;max-width:760px}
 .svc-form-head p{color:var(--navy);font-size:1.35rem;font-weight:600;line-height:1.5;letter-spacing:0.01em}

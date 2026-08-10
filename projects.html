@@ -190,7 +190,9 @@ footer .foot-main{background:var(--navy);padding:56px 0}
   .head-cta{display:none}
   .burger{display:block}
   .brand-name{display:none}
+  .brand img{height:52px}
 }
+@media(max-width:480px){.brand img{height:44px}}
 @media(max-width:900px){
   .hero{min-height:560px;margin:10px 16px 0}
   .hero .container{padding-top:84px}
@@ -277,13 +279,15 @@ footer .foot-main{background:var(--navy);padding:56px 0}
 .svc-back a{color:var(--navy);font-weight:600;font-size:0.95rem;display:inline-flex;align-items:center;gap:8px;min-height:44px}
 .svc-back a:hover{color:var(--blue)}
 .svc-main{padding:44px 0 80px}
-.svc-main .container{display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:start}
+.svc-main .container{display:block}
+.svc-copy{max-width:none;margin-bottom:40px}
+.svc-form{max-width:none}
 .svc-copy h2{font-family:var(--font-display);font-weight:700;font-size:1.9rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--navy);margin-bottom:16px}
 .svc-copy p{color:var(--text-muted);margin-bottom:16px;font-size:1.05rem}
 .svc-copy .lead{color:var(--text);font-size:1.12rem}
-.svc-form{background:var(--white);border:1px solid var(--grey-mid);border-top:4px solid var(--navy);border-radius:6px;padding:28px 26px;box-shadow:0 14px 34px rgba(20,29,49,0.10);position:sticky;top:120px}
-.svc-form h3{font-family:var(--font-display);font-weight:700;font-size:1.2rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--navy);margin-bottom:6px}
-.svc-form .sf-sub{color:var(--text-muted);font-size:0.92rem;margin-bottom:18px}
+.svc-form{background:transparent;border:none;border-radius:0;padding:0;box-shadow:none}
+.svc-form h3{display:none}
+.svc-form .sf-sub{display:none}
 .svc-form input,.svc-form textarea{width:100%;border:1px solid var(--grey-mid);border-radius:5px;background:var(--white);padding:12px 14px;font-family:var(--font);font-size:0.98rem;margin-bottom:12px;min-height:46px}
 .svc-form textarea{min-height:110px;resize:vertical}
 .svc-form input:focus,.svc-form textarea:focus{outline:2px solid var(--blue);outline-offset:-1px}
@@ -293,8 +297,7 @@ footer .foot-main{background:var(--navy);padding:56px 0}
   .svc-hero h1{font-size:1.7rem;letter-spacing:0.05em}
   .svc-back{margin:18px 16px 0}
   .svc-main{padding:34px 0 56px}
-  .svc-main .container{grid-template-columns:1fr;gap:34px}
-  .svc-form{position:static}
+  .svc-form{max-width:none}
 }
 
 /* ---------- Locations map (Leaflet) ---------- */
@@ -311,6 +314,11 @@ footer .foot-main{background:var(--navy);padding:56px 0}
 .map-legend span{display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;font-weight:600;letter-spacing:0.06em;color:var(--navy)}
 .lg-dot{width:14px;height:14px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,0.2)}
 @media(max-width:900px){.map-wrap{margin:0 16px}#projectMap{height:420px}}
+@media(min-width:901px){.svc-form iframe[src*='widget/form']{height:820px !important;min-height:820px}}
+@media(max-width:900px){.svc-form iframe[src*='widget/form']{height:600px !important;min-height:600px}}
+
+.svc-form-head{text-align:center;margin:36px auto 24px;max-width:760px}
+.svc-form-head p{color:var(--navy);font-size:1.35rem;font-weight:600;line-height:1.5;letter-spacing:0.01em}
 </style></head><body><header>
   <div class="container head-inner">
     <a class="brand" href="index.html#home" aria-label="Gloucester Property Group home">

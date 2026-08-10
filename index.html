@@ -168,7 +168,8 @@ nav.desktop a:hover{color:var(--blue)}
 /* ---------- Contact ---------- */
 .contact{padding:88px 0;background:var(--grey-bg);margin:0 85px}
 .contact-layout{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:start}
-.contact-layout iframe[src*='widget/form']{height:820px !important;min-height:820px}
+@media(min-width:901px){.contact-layout iframe[src*='widget/form']{height:820px !important;min-height:820px}}
+@media(max-width:900px){.contact-layout iframe[src*='widget/form']{height:600px !important;min-height:600px}}
 .contact-form-full{width:100%}
 .contact-info-row{display:flex;flex-direction:column;gap:16px}
 .form-card input,.form-card textarea{width:100%;border:1px solid var(--grey-mid);border-radius:5px;background:var(--white);padding:14px 16px;font-family:var(--font);font-size:1rem;margin-bottom:16px;min-height:48px}
@@ -211,6 +212,10 @@ footer .foot-main{background:var(--navy);padding:56px 0}
   .head-cta{display:none}
   .burger{display:block}
   .brand-name{display:none}
+  .brand img{height:52px}
+}
+@media(max-width:480px){
+  .brand img{height:44px}
 }
 @media(max-width:900px){
   .hero{min-height:560px;margin:10px 16px 0}
